@@ -119,4 +119,4 @@ table2 added successfully!
 - **C++17 or later**
 - **ncurses** or **FTXUI** for TUI
 - STL containers (`vector`, `map`, `unordered_map`)
-- Optional: system headers for low-level process manipulation (if doing debugger
+- Optional: system headers for low-level process manipulation
