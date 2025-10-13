@@ -113,11 +113,6 @@ table2 added successfully!
    - Implement efficient search/filtering.
    - Consider caching and memory optimizations for large CSVs.
 
-7. **Optional Debugger Challenge**
-   - Disassemble a small binary.
-   - Insert breakpoints with `0xCC`.
-   - Step through instructions in a controlled environment.
-
 ---
 
 ## Tools & Libraries
