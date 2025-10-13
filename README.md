@@ -30,46 +30,32 @@ csvl: list tables
 endtext
 
 ### GDB-Style TUI Layout
-text
-+---------------------------+---------------------------+
-|       Output Panel        |       Tables Panel        |
-|  (query results, errors)  | table1  col1, col2, col3 |
-|                           | table2  col1, col2       |
-+---------------------------+---------------------------+
-| Command Panel: csvl: _                           |
-+--------------------------------------------------+
-endtext
-- **Output Panel**: Scrollable query results and error messages.
-- **Tables Panel**: Shows currently loaded tables and their columns.
-- **Command Panel**: For typing queries and table management commands, supports history and shortcuts.
+```
+csvl: INPUT
+
+OUTPUT
+```
 
 ### Table Class Design
-text
-class Table {
-private:
-    std::string name;
-    std::vector<std::string> columns;
-    std::vector<std::vector<std::string>> rows;
 
-public:
-    // Constructor to load CSV
-    Table(const std::string& tableName, const std::string& filename);
+Have a class for a table, keeping methods for each query style
 
-    // Accessors
-    const std::string& getName() const;
-    const std::vector<std::string>& getColumns() const;
-    const std::vector<std::vector<std::string>>& getRows() const;
+### CSV to Table
 
-    // Query functions
-    std::vector<std::vector<std::string>> select(
-        const std::vector<std::string>& cols, 
-        const std::function<bool(const std::vector<std::string>&)>& filter
-    ) const;
+A CSV file can be given as a table CSVL like this:
 
-    // Optional: add rows dynamically
-    void addRow(const std::vector<std::string>& row);
-};
-endtext
+```bash
+$ ./csvl table1=table1.csv table2=table2.csv
+```
+
+Or can be given like this in the TUI
+
+```
+csvl: table add table1=table1.csv
+table1 added successfully!
+csvl: table add table2=table2c.sv
+table2 added successfully!
+```
 
 ---
 
