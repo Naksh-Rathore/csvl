@@ -1,4 +1,4 @@
- # CSVL: CSV Language
+# CSVL: CSV Language
 
 ---
 
@@ -12,6 +12,58 @@ me learn C++, and this project will teach me **pointers**, **file handling**, **
 ---
 
 ## Features
+
+### Basic features
+
+Basic usage:
+
+```bash
+./csvl [args]
+```
+
+the TUI:
+
+```
+csvl: INPUT
+
+OUTPUT
+```
+
+To add a table (command-line):
+
+```bash
+./csvl [table_name]=[csv file]
+```
+
+To add a table (TUI):
+
+```
+csvl: table add [table_name]=[csv file]
+```
+
+To remove a table:
+
+```
+csvl: table remove [table_name]
+```
+
+To list all tables:
+
+```
+csvl: table list
+```
+
+To do a query:
+
+```
+csvl: [query]
+```
+
+### Future features to implement later
+
+* Config file (something like `~/.gdbinit`)
+* Command line queries (something like `python3 -c 'print("Hello World)'`)
+* Table sharing (join with a code)
 
 ---
 
