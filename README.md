@@ -104,13 +104,13 @@ Contributions are highly valued! Feel free to submit a PR, issue, or DM me about
 
 * Relevant: No unrelated issues or PRs
 * Helpful: Something you believe will help the project
-* Informative: No PRs or issues like `Fixed issue` or `BUG` with no extended information
+* Informative: Avoid vague PRs or issues like `Fixed issue` or `BUG` with no extended information
 
 Contributions that don't comply with these rules are either given the `info-needed` tag, asked to elaborate, or are closed.
 
 ## License
 
-This project uses the MIT License. More info can be found in [LICENSE].
+This project uses the MIT License. More info can be found in [the license](https://github.com/Naksh-Rathore/csvl/blob/main/LICENSE).
 
 Thanks!
 
