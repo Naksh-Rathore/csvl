@@ -62,7 +62,7 @@ csvl: [query]
 ### Future features to implement later
 
 * Config file (something like `~/.gdbinit`)
-* Command line queries (something like `python3 -c 'print("Hello World)'`)
+* Command line queries (something like `python3 -c 'print("Hello World")'`)
 * Table sharing (join with a code)
 
 ---
